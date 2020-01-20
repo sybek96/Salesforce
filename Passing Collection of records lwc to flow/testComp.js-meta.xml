@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="helloWorld">
+        <apiVersion>47.0</apiVersion>
+        <isExposed>true</isExposed>
+        <targets>
+            <target>lightning__FlowScreen</target>
+        </targets>
+        <targetConfigs>
+            <targetConfig targets="lightning__FlowScreen,">
+                <property name="accountRecord" type="@salesforce/schema/Account"/>
+                <property name="accountRecordList" type="@salesforce/schema/Account[]"/>
+            </targetConfig>
+      </targetConfigs>
+</LightningComponentBundle>
